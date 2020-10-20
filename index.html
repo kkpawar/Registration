@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="head">
+        <h1>General Information</h1>
+    </div>
+    <main class="main">
+        <tr>
+            <th>Full Name</th>
+            <td><input type="text" size="40" id="name"></td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <th>Address &nbsp; &nbsp;</th>
+            <td><input type="text" size="70" id="address" ></td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <th>Sex &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <td><input type="text" size="10" id="sex"></td>
+           
+        </tr>
+        <br>
+        <br>
+        <br>        <tr>
+            <td>State&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</td>
+            <td><select name="state" id="state" placeholder="click" id="state">
+                <option value=""></option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh	">Arunachal Pradesh	</option>
+                <option value="Assam		">Assam		</option>
+                <option value="Bihar			">Bihar			</option>
+                <option value="Chhattisgarh				">Chhattisgarh				</option>
+                <option value="Goa					">Goa					</option>
+                <option value="Gujarat						">Gujarat						</option>
+                <option value="Haryana							">Haryana					</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand	">Jharkhand	</option>
+                <option value="Karnataka	">Karnataka	</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh	">Madhya Pradesh	</option>
+                <option value="Maharashtra		">Maharashtra		</option>
+                <option value="Manipur			">Manipur			</option>
+                <option value="Meghalaya				">Meghalaya				</option>
+                <option value="Mizoram					">Mizoram					</option>
+                <option value="Nagaland						">Nagaland						</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab	">Punjab	</option>
+                <option value="Rajasthan		">Rajasthan		</option>
+                <option value="Rajasthan		">Rajasthan		</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+            </select></td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <th>City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+            <td><input type="text" id="city"></td>
+        </tr>   
+        <br>
+        <br>
+        <tr>
+            <th>Pin Code  &nbsp;</th>
+            <td><input type="text" size="10" id="pincode"></td>
+        </tr>
+        <br>
+        <br>
+        <br>
+        <tr>
+            <th>Phone<br> Number  &nbsp; &nbsp; </th>
+            <td ><input type="text" id="number"></td>
+        </tr>
+        <br>
+        <br>
+        <br>
+        <tr>
+            <th>Email<br> Address  &nbsp; &nbsp; </th>
+            <td ><input type="email" placeholder="xyz@gmail.com" size="40" id="email"></td>
+        </tr>
+        <br>
+        <br>
+        <br>
+        <tr>
+            <th>Age &nbsp;&nbsp;  &nbsp;  &nbsp; &nbsp;&nbsp; </th>
+            <td ><input type="text" size="3" id="age"></td>
+        </tr>
+        <br>
+        <br>
+        <br>
+
+        
+        <div class="button">
+            <tr>
+                <td><button class="btn1" onclick="insert()">submit</button></td>
+                <td><button class="btn2">Next</button></td>
+            </tr>
+        </div>
+
+
+    </main>
+
+    <h1 class="h1">User Data</h1>
+    <main class="main">
+        <table style="width: 70%;" id="tbl">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Sex</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Pin Code</th>
+                <th>Phone Number</th>
+                <th>Email Address</th>
+                <th>Age</th>
+            </tr>
+            </thead>>
+            <tbody id="tbody"> </tbody>
+        </table>
+    </main>
+</body>
+</html>
