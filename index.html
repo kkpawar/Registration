@@ -1,136 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <script src="./script.js"></script>
 </head>
 <body>
-    <div class="head">
-        <h1>General Information</h1>
-    </div>
-    <main class="main">
-        <tr>
-            <th>Full Name</th>
-            <td><input type="text" size="40" id="name"></td>
-        </tr>
-        <br>
-        <br>
-        <tr>
-            <th>Address &nbsp; &nbsp;</th>
-            <td><input type="text" size="70" id="address" ></td>
-        </tr>
-        <br>
-        <br>
-        <tr>
-            <th>Sex &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-            <td><input type="text" size="10" id="sex"></td>
-           
-        </tr>
-        <br>
-        <br>
-        <br>        <tr>
-            <td>State&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</td>
-            <td><select name="state" id="state" placeholder="click" id="state">
-                <option value=""></option>
-                <option value="Andhra Pradesh">Andhra Pradesh</option>
-                <option value="Arunachal Pradesh	">Arunachal Pradesh	</option>
-                <option value="Assam		">Assam		</option>
-                <option value="Bihar			">Bihar			</option>
-                <option value="Chhattisgarh				">Chhattisgarh				</option>
-                <option value="Goa					">Goa					</option>
-                <option value="Gujarat						">Gujarat						</option>
-                <option value="Haryana							">Haryana					</option>
-                <option value="Himachal Pradesh">Himachal Pradesh</option>
-                <option value="Jharkhand	">Jharkhand	</option>
-                <option value="Karnataka	">Karnataka	</option>
-                <option value="Kerala">Kerala</option>
-                <option value="Madhya Pradesh	">Madhya Pradesh	</option>
-                <option value="Maharashtra		">Maharashtra		</option>
-                <option value="Manipur			">Manipur			</option>
-                <option value="Meghalaya				">Meghalaya				</option>
-                <option value="Mizoram					">Mizoram					</option>
-                <option value="Nagaland						">Nagaland						</option>
-                <option value="Odisha">Odisha</option>
-                <option value="Punjab	">Punjab	</option>
-                <option value="Rajasthan		">Rajasthan		</option>
-                <option value="Rajasthan		">Rajasthan		</option>
-                <option value="Sikkim">Sikkim</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
-                <option value="Telangana">Telangana</option>
-                <option value="Tripura">Tripura</option>
-                <option value="Uttar Pradesh">Uttar Pradesh</option>
-                <option value="Uttarakhand">Uttarakhand</option>
-                <option value="West Bengal">West Bengal</option>
-            </select></td>
-        </tr>
-        <br>
-        <br>
-        <tr>
-            <th>City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
-            <td><input type="text" id="city"></td>
-        </tr>   
-        <br>
-        <br>
-        <tr>
-            <th>Pin Code  &nbsp;</th>
-            <td><input type="text" size="10" id="pincode"></td>
-        </tr>
-        <br>
-        <br>
-        <br>
-        <tr>
-            <th>Phone<br> Number  &nbsp; &nbsp; </th>
-            <td ><input type="text" id="number"></td>
-        </tr>
-        <br>
-        <br>
-        <br>
-        <tr>
-            <th>Email<br> Address  &nbsp; &nbsp; </th>
-            <td ><input type="email" placeholder="xyz@gmail.com" size="40" id="email"></td>
-        </tr>
-        <br>
-        <br>
-        <br>
-        <tr>
-            <th>Age &nbsp;&nbsp;  &nbsp;  &nbsp; &nbsp;&nbsp; </th>
-            <td ><input type="text" size="3" id="age"></td>
-        </tr>
-        <br>
-        <br>
-        <br>
+<div class="container">
+<header >
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a href="#" class="navbar-brand">logo</a>
 
+        <ul class="navbar-nav">
+           <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="table.html" class="nav-link">All Details</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+        </ul>
         
-        <div class="button">
-            <tr>
-                <td><button class="btn1" onclick="insert()">submit</button></td>
-                <td><button class="btn2">Next</button></td>
-            </tr>
+    </nav>
+</header>
+<main>
+    <div class="jumbotron">
+<h1>Sign up</h1>
+</div>
+<div class="card">
+
+    <div class="card-header">General Information</div>
+    <div class="card-body">
+        <div class="form-group">
+            <div class="col-md-6">
+                <label for="name">Full Name</label>
+                <input type="text" name="" id="name" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="address">Address</label>
+                <input type="text" name="" id="address" class="form-control">
+            </div> 
+            <div class="col-md-6">
+                <label for="sex">sex</label>
+                <input type="text" name="" id="sex"class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="state">State</label>
+                <select name="state" id="state" placeholder="click" id="state" class="form-control">
+                    <option value=""></option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh	</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand	</option>
+                    <option value="Karnataka">Karnataka	</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh	</option>
+                    <option value="Maharashtra">Maharashtra		</option>
+                    <option value="Manipur">Manipur			</option>
+                    <option value="Meghalaya">Meghalaya				</option>
+                    <option value="Mizoram">Mizoram					</option>
+                    <option value="Nagaland	">Nagaland						</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab	">Punjab	</option>
+                    <option value="Rajasthan">Rajasthan		</option>
+                    <option value="Rajasthan">Rajasthan		</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="city">City</label>
+                <input type="text" name="" id="city" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="pincode">Pin Code</label>
+                <input type="text" name="" id="pincode" class="form-control">
+            </div> 
+            <div class="col-md-6">
+                <label for="number">Phone Number</label>
+                <input type="text" name="" id="number" class="form-control">
+            </div> `   
+            <div class="col-md-6">
+                <label for="email">Email Address</label>
+                <input type="text" name="" id="email" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="age">Age</label>
+                <input type="text" name="" id="age" class="form-control">
+            </div>
+            
         </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary" onclick="insert()">submit</button>
+    </div>
 
 
-    </main>
+    
 
-    <h1 class="h1">User Data</h1>
-    <main class="main">
-        <table style="width: 70%;" id="tbl">
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Address</th>
-                <th>Sex</th>
-                <th>State</th>
-                <th>City</th>
-                <th>Pin Code</th>
-                <th>Phone Number</th>
-                <th>Email Address</th>
-                <th>Age</th>
-            </tr>
-            </thead>>
-            <tbody id="tbody"> </tbody>
-        </table>
-    </main>
+</div>
+ <br>
+ <br>
+</div>
+</main>
+<footer class=""></footer>
+</div>
+
+<script>
+
+    let user = {
+        id: 0,
+        name: "",
+        address: "",
+        sex: "",
+        state: "",
+        city: "",
+        pincode: "",
+        number: "",
+        email: "",
+        age:"",
+        
+    }
+    let users = [];
+    
+    let json_str = localStorage.getItem("userdata");
+    if(json_str !=null)
+        
+    {
+        users = JSON.parse(json_str)
+    }
+    
+    function insert()
+    {
+        user = {};
+        user.id = user.id + 1;
+    
+        
+        user.name = document.getElementById("name").value;
+        user.address= document.getElementById("address").value;
+        user.sex = document.getElementById("sex").value;
+        user.state = document.getElementById("state").value;
+        user.city = document.getElementById("city").value;
+        user.pincode = document.getElementById("pincode").value;
+        user.number = document.getElementById("number").value;
+        user.email = document.getElementById("email").value;
+        user.age = document.getElementById("age").value;
+        users.push(user)
+    localStorage.setItem("userdata",JSON.stringify(users))
+    }
+    
+     
+    
+    </script>
+    
 </body>
 </html>
+
+    

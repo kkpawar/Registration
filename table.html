@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
-    <script src="./script.js"></script>
+    <title>Registration</title>
 </head>
 <body>
-    <header class="head">
-        <h1 class="h1">User Data</h1>
-    </header>
-    <main class="main">
-    <table style="width: 70%;" id="tbl">
+<div class="container">
+<header >
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a href="#" class="navbar-brand">logo</a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="table.html" class="nav-link">All Details</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+        </ul>
+        
+    </nav>
+</header>
+<main>
+  
+
+ <br>
+ <br>
+<div class="card">
+<div class="card-header">User Details</div>
+<div class="card-body">
+    <table class="table">
         <thead>
         <tr>
             <th>Name</th>
@@ -27,6 +55,62 @@
         </thead>>
         <tbody id="tbody"> </tbody>
     </table>
+
+
+</div>
+
+</div>
 </main>
+<footer class=""></footer>
+</div>
+
+<script>
+
+ 
+let users = [];
+
+let json_str = localStorage.getItem("userdata");
+if(json_str !=null)
+    
+{
+    users = JSON.parse(json_str)
+    Bindtable()
+}
+
+
+    function Bindtable()
+    {
+        let tbody ="";
+
+        for(let p of  users){
+                  
+ tbody += `<tr>
+    <td>${p.name}</td>
+    <td>${p.address}</td>
+    <td>${p.sex}</td>
+    <td>${p.state}</td>
+    <td>${p.city}</td>
+    <td>${p.pincode}</td>
+    <td>${p.number}</td>
+    <td>${p.email}</td>
+    <td>${p.age}</td>
+</tr>
+    `
+    document.getElementById("tbody").innerHTML = tbody;
+        }
+  
+    
+         
+         
+    }
+
+</script>
+
+
+
 </body>
 </html>
+
+   
+
+   
